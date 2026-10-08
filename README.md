@@ -33,7 +33,7 @@ Make one public, events-only Google Calendar per event type (Trials, Fast CAT, D
 ## Passwords (Cloudflare secrets; any username works)
 - `DRAFT_PASSWORD`: while set, the whole site asks for it. Use while Amy reviews; delete at launch.
 - `TRIAL_<SLUG>`: protects one trial page and its files, e.g. `TRIAL_FALL_USDAA_2026_X7K2`. Without it the trial is link-only.
-- `npx wrangler secret put <NAME>`, or Cloudflare dashboard → Workers & Pages → `hogdogsite` → Settings → Variables and Secrets.
+- `npx wrangler secret put <NAME>`, or Cloudflare dashboard → Workers & Pages → `hogdog` → Settings → Variables and Secrets.
 
 ## Deploy (Cloudflare Workers Builds)
-Build command `npm run build` (draft) or `npm run publish` (launch); deploy command `npx wrangler deploy`. Connected: every push to `main` builds and deploys https://hogdogsite.acrmartin.workers.dev (currently the draft build). At launch, attach hogdogproductions.net as a custom domain under Hog Dog's own Cloudflare account (N-10), and add redirects for old WordPress addresses (N-11). See `BACKLOG.md` for open decisions.
+Build command `npm run build` (draft) or `npm run publish` (launch); deploy command `npx wrangler deploy`. Connected: every push to `main` builds and deploys https://hogdog.acrmartin.workers.dev (currently the draft build). At launch, attach hogdogproductions.net as a custom domain under Hog Dog's own Cloudflare account (N-10), and add redirects for old WordPress addresses (N-11). See `BACKLOG.md` for open decisions.

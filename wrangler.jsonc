@@ -2,7 +2,7 @@
 // Build command in the Cloudflare dashboard: npm run build (draft) or npm run publish (launch).
 // Every request runs worker/index.js first: trial-page headers and passwords, and the optional draft password.
 {
-  "name": "hogdogsite",
+  "name": "hogdog",
   "compatibility_date": "2026-10-01",
   "main": "worker/index.js",
   "assets": {
@@ -11,6 +11,6 @@
     "run_worker_first": true,
     "not_found_handling": "404-page"
   },
-  // Draft lives at hogdogsite.<account>.workers.dev. Attach hogdogproductions.net as a custom domain at launch.
+  // Draft lives at hogdog.<account>.workers.dev. Attach hogdogproductions.net as a custom domain at launch.
   "workers_dev": true
 }
