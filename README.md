@@ -36,4 +36,4 @@ Make one public, events-only Google Calendar per event type (Trials, Fast CAT, D
 - `npx wrangler secret put <NAME>`, or Cloudflare dashboard → Workers & Pages → `hogdogsite` → Settings → Variables and Secrets.
 
 ## Deploy (Cloudflare Workers Builds)
-Build command `npm run build` (draft) or `npm run publish` (launch); deploy command `npx wrangler deploy`. At launch, attach hogdogproductions.net as a custom domain under Hog Dog's own Cloudflare account (N-10), and add redirects for old WordPress addresses (N-11). See `BACKLOG.md` for open decisions.
+Build command `npm run build` (draft) or `npm run publish` (launch); deploy command `npx wrangler deploy`. Connected: every push to `main` builds and deploys https://hogdogsite.acrmartin.workers.dev (currently the draft build). At launch, attach hogdogproductions.net as a custom domain under Hog Dog's own Cloudflare account (N-10), and add redirects for old WordPress addresses (N-11). See `BACKLOG.md` for open decisions.
