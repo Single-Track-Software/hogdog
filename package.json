@@ -1,0 +1,15 @@
+{
+  "name": "hogdog-site",
+  "version": "1.0.0",
+  "description": "Hog Dog Productions site (static, built with Node)",
+  "private": true,
+  "scripts": {
+    "build": "node build/build.js",
+    "publish": "node build/build.js --publish",
+    "start": "node serve.js",
+    "dev": "node build/build.js && npx wrangler dev --port 8787"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
